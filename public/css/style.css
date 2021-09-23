@@ -1,0 +1,205 @@
+:root {
+  --pinkLace: #fde2ff;
+  --thistle: #e8cee4;
+  --pinkLavender: #d7bce8;
+  --medSlateBlue: #8884ff;
+  --independence: #5d576b;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: var(--thistle);
+  font-family: "Oswald", sans-serif;
+  color: var(--independence);
+}
+
+nav {
+  background-color: var(--independence);
+  color: var(--pinkLace);
+}
+
+nav .nav-title {
+  font-size: 48px;
+}
+
+.nav-link {
+  font-size: 18px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: var(--pinkLace);
+}
+
+#login,
+#logout,
+#home,
+#dashboard {
+  font-size: 16px;
+}
+
+#tb-logo {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+main {
+  flex: 1 0 auto;
+  margin-top: 16px;
+}
+
+.post-div {
+  text-align: center;
+  margin-bottom: 16px;
+  border: 2px solid var(--independence);
+  border-radius: 13px;
+}
+
+.title-byline {
+  margin-bottom: 0px;
+  border-bottom: 1px solid var(--independence);
+  border-radius: 10px 10px 0px 0px;
+  background-color: var(--independence);
+  color: var(--pinkLace);
+}
+
+.title-byline p {
+  font-size: 18px;
+}
+
+.post-byline {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.post-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: var(--pinkLace);
+  border-radius: 0px 0px 10px 10px;
+  color: var(--independence);
+  font-size: 18px;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#create-post,
+#create-account {
+  color: var(--pinkLace);
+}
+
+#submit-new-post {
+  margin-top: 10px;
+}
+
+#delete-post {
+  margin-left: 10px;
+}
+
+#comment-section-label {
+  margin-top: 60px;
+}
+
+.comment-div {
+  border: 2px solid var(--independence);
+  border-radius: 13px;
+  font-style: italic;
+  background-color: var(--pinkLace);
+  font-size: 18px;
+}
+
+.posted-comment {
+  display: inline;
+  text-align: right;
+}
+
+.empty-comment-title {
+  background-color: var(--independence);
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px var(--independence) solid;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#login-div {
+  margin-top: 10px;
+}
+
+#login-page-title {
+  color: var(--independence);
+}
+
+form label {
+  color: var(--independence);
+  font-size: 14px;
+}
+
+#create-account-div {
+  margin-top: 50px;
+}
+
+.btn {
+  background-color: var(--medSlateBlue);
+  font-family: "Oswald", sans-serif;
+  border-radius: 10px;
+  text-transform: lowercase;
+}
+
+.btn:hover {
+  background-color: var(--pinkLavender);
+}
+
+input {
+  font-family: "Oswald", sans-serif;
+  color: var(--independence);
+}
+
+.page-footer {
+  margin-top: 16px;
+  background-color: var(--independence);
+  font-size: 16px;
+}
+
+.my-footer {
+  padding-bottom: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 320px) {
+}
+
+@media screen and (min-width: 480px) {
+  .nav-content {
+    text-align: left;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 801px) {
+  form label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .title-byline h3,
+  .post-text {
+    text-align: left;
+  }
+
+  .post-byline {
+    margin-top: 48px;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+}
