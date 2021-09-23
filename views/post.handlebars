@@ -1,0 +1,36 @@
+{{> post-details}}
+{{#if userPost}}
+{{#if loggedIn}}
+<div>
+    <button id="delete-post" class="btn btn-primary right waves-effect waves-light btn-small" data-id="{{id}}"><i class="material-icons" data-id="{{id}}">delete</i></button>
+    <a href="/editpost/{{id}}"><button id="edit-post" class="btn btn-primary right waves-effect waves-light btn-small"><i class="material-icons">edit</i></button></a>
+</div>
+{{/if}}
+{{/if}}
+<h5 id="comment-section-label">comments:</h5>
+{{#each comments as |comment|}}
+{{> comment-details}}
+{{/each}}
+{{#if loggedIn}}
+<div class="row">
+  <div class="col-md-6">
+    <h5>add comment</h5>
+    <form class="form new-comment-form">
+      <div class="form-group">
+        <label for="comment">comment:</label>
+        <input class="form-input" type="text" id="comment" />
+      </div>
+      <div class="form-group center">
+        <button class="btn btn-primary" type="submit">submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+{{/if}}
+
+{{#if loggedIn}}
+<script src="/js/addcomment.js"></script>
+{{/if}}
+{{#if userPost}}
+<script src="/js/deletepost.js"></script>
+{{/if}}
